@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CharMain">
+   <children>
+      <Circle fx:id="cp" fill="#1fff3e" layoutX="603.0" layoutY="114.0" radius="64.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fx:id="cg" fill="#ff219e" layoutX="952.0" layoutY="113.0" radius="64.0" stroke="WHITE" strokeType="INSIDE" />
+      <PieChart layoutX="51.0" layoutY="50.0" prefHeight="253.0" prefWidth="430.0" />
+      <PieChart fx:id="pioChart" layoutX="337.0" layoutY="253.0" prefHeight="559.0" prefWidth="1211.0" />
+      <Circle fx:id="cb" fill="#6b21ff" layoutX="772.0" layoutY="113.0" radius="64.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fx:id="cf" fill="#ff1f1f" layoutX="1128.0" layoutY="113.0" radius="64.0" stroke="WHITE" strokeType="INSIDE" />
+      <Label fx:id="field" layoutX="1111.0" layoutY="124.0" textFill="WHITE">
+         <font>
+            <Font name="Hacen Algeria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1075.0" layoutY="83.0" prefHeight="21.0" prefWidth="103.0" text="الطلبة غير ناحجين" textFill="#fffbfb">
+         <font>
+            <Font name="Hacen Algeria" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="girl" layoutX="935.0" layoutY="125.0" textFill="WHITE">
+         <font>
+            <Font name="Hacen Algeria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="912.0" layoutY="83.0" prefHeight="21.0" prefWidth="81.0" text="عدد الطلبات" textFill="#fffbfb">
+         <font>
+            <Font name="Hacen Algeria" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="boy" layoutX="755.0" layoutY="123.0" textFill="WHITE">
+         <font>
+            <Font name="Hacen Algeria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="737.0" layoutY="82.0" prefHeight="21.0" prefWidth="71.0" text="عدد الطلبة" textFill="#fffbfb">
+         <font>
+            <Font name="Hacen Algeria" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="pass" layoutX="586.0" layoutY="123.0" textFill="WHITE">
+         <font>
+            <Font name="Hacen Algeria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="556.0" layoutY="83.0" prefHeight="21.0" prefWidth="95.0" text="الطلبة ناحجين" textFill="#fffbfb">
+         <font>
+            <Font name="Hacen Algeria" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

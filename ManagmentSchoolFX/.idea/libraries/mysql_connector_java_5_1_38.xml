@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="mysql-connector-java-5.1.38">
+    <CLASSES>
+      <root url="jar://D:/shareit/SM-G355H/mysql-connector-java-5.1.38.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/controlsfx-samples-8.40.14.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/controlsfx-8.40.14.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/fxsampler-1.0.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/controlsfx-samples-8.40.14.jar!/" />
+    </SOURCES>
+  </library>
+</component>

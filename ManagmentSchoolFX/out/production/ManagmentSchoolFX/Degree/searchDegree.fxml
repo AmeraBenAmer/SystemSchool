@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Degree.ControlDegree">
+   <children>
+      <HBox alignment="TOP_RIGHT" prefHeight="77.0" prefWidth="1650.0" spacing="50.0" style="-fx-background-color: #283655;">
+         <children>
+            <JFXRadioButton fx:id="class_R" alignment="CENTER_RIGHT" contentDisplay="RIGHT" nodeOrientation="RIGHT_TO_LEFT" text="الفصل الدراسي" textFill="#d0e1f9">
+               <font>
+                  <Font name="Hacen Algeria" size="16.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="userg" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="stuName_R1" alignment="CENTER_RIGHT" contentDisplay="RIGHT" nodeOrientation="RIGHT_TO_LEFT" text="اسم الطالب" textFill="#d0e1f9" toggleGroup="$userg">
+               <font>
+                  <Font name="Hacen Algeria" size="16.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="nameTeacher_R" alignment="CENTER_RIGHT" contentDisplay="RIGHT" nodeOrientation="RIGHT_TO_LEFT" text="اسم المعلم" textFill="#d0e1f9" toggleGroup="$userg">
+               <font>
+                  <Font name="Hacen Algeria" size="16.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="subject_R" alignment="CENTER_RIGHT" contentDisplay="RIGHT" nodeOrientation="RIGHT_TO_LEFT" selected="true" text="المادة" textFill="#d0e1f9" toggleGroup="$userg">
+               <font>
+                  <Font name="Hacen Algeria" size="16.0" />
+               </font>
+            </JFXRadioButton>
+            <Region prefHeight="37.0" prefWidth="401.0" />
+            <HBox prefHeight="32.0" prefWidth="304.0" spacing="20.0" translateX="-100.0" translateY="-20.0">
+               <children>
+                  <JFXTextField fx:id="search_field" focusColor="WHITE" labelFloat="true" nodeOrientation="RIGHT_TO_LEFT" prefHeight="37.0" prefWidth="255.0" promptText="البحث" style="-fx-text-fill: #fff;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="16" />
+                     </font>
+                  </JFXTextField>
+                  <ImageView fx:id="search_btn" fitHeight="32.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/search.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="30.0" right="35.0" top="50.0" />
+         </padding>
+      </HBox>
+      <TableView fx:id="degree_table" maxHeight="-Infinity" minHeight="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="601.0" prefWidth="1425.0" tableMenuButtonVisible="true">
+         <padding>
+            <Insets left="10.0" right="10.0" top="20.0" />
+         </padding>
+         <VBox.margin>
+            <Insets right="30.0" />
+         </VBox.margin>
+      </TableView>
+      <HBox alignment="CENTER_RIGHT" prefHeight="203.0" prefWidth="845.0" spacing="30.0">
+         <padding>
+            <Insets right="35.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

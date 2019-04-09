@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CharMain">
+   <children>
+      <Rectangle fx:id="f1" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="141.0" layoutX="279.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" width="208.0" />
+      <Rectangle fx:id="p1" arcHeight="5.0" arcWidth="5.0" fill="#1dd736" height="141.0" layoutX="279.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" width="208.0" />
+      <Rectangle fx:id="b1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="141.0" layoutX="279.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" width="208.0" />
+      <Rectangle fx:id="g1" arcHeight="5.0" arcWidth="5.0" fill="#ff009c" height="141.0" layoutX="279.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" width="208.0" />
+      <TextField fx:id="num_pass" alignment="CENTER" disable="true" layoutX="289.0" layoutY="97.0" prefHeight="58.0" prefWidth="188.0" style="-fx-background-color: #1dd736;">
+         <font>
+            <Font name="Hacen Algeria" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="num_faild" alignment="CENTER" disable="true" layoutX="289.0" layoutY="97.0" prefHeight="58.0" prefWidth="188.0" style="-fx-background-color: #ff1f1f;">
+         <font>
+            <Font name="Hacen Algeria" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="num_boy" alignment="CENTER" disable="true" layoutX="289.0" layoutY="97.0" prefHeight="58.0" prefWidth="188.0" style="-fx-background-color: #1e90ff;">
+         <font>
+            <Font name="Hacen Algeria" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="num_grail" alignment="CENTER" layoutX="289.0" layoutY="97.0" prefHeight="58.0" prefWidth="188.0" style="-fx-background-color: #ff009c;">
+         <font>
+            <Font name="Akhbar MT" size="24.0" />
+         </font>
+      </TextField>
+      <BarChart fx:id="chart" layoutX="51.0" layoutY="326.0" prefHeight="507.0" prefWidth="1546.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+         <effect>
+            <DropShadow color="#00000093" />
+         </effect>
+      </BarChart>
+   </children>
+</AnchorPane>
